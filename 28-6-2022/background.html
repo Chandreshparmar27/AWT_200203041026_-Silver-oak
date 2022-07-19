@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        #back{
+            position: fixed;
+            /* /* object-fit: fill;
+            top: 0;
+            left: 0; */
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+
+        input{
+            background: none;
+            color: white;
+        }
+        div{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <video src="/date- 07-07-2022/SampleVideo_1280x720_2mb.mp4" autoplay muted loop id="back"></video>
+    <form>
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" name="myName" id="name"> 
+            <!-- name attribute is use for backend -->
+        </div>
+        <br>
+        <div>
+            Surname : <input type="text" name="ySurname" id="surname">
+        </div>
+        <br>
+        <div>
+            Roll No. : <input type="number" name="myRollno" id="roll">
+        </div>
+        <br>
+        <div>
+            Enter your BOD : <input type="date" name="myBod" id="bod">
+        </div>
+        <br>
+        <div>
+            Your eligbel : <input type="checkbox" name="myEligiblity" id="surname">
+        </div>
+        <br>
+        <div>
+            Enter about Your Hobby : <br><textarea name="myHobby" id="Hobby" cols="90" rows="10" style="background: none;"></textarea>
+        </div>
+        <br>
+        <!-- makig multypale choise boxes use radio  -->
+        <div>
+            Gender : 
+            Male <input type="radio" name="myGender" id="Gender">
+            Male <input type="radio" name="myGender" id="Gender">
+            Other <input type="radio" name="myGender" id="Gender">
+        </div>
+        <br>
+        <!-- makig multypale choise hover select  -->
+        <div>
+           Select your car : 
+                <select name="mycar" id="car">
+                <option value="lemo">Lemborginy</option>
+                <option value="mer">Mercidic</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="Submit">
+            <input type="reset" name="Reset">
+        </div>
+    </form>
+</body>
+</html>
